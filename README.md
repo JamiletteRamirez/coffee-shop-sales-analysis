@@ -112,19 +112,19 @@ Se creó un dashboard interactivo con Power BI, conectado directamente con la ba
 
 ## 📂 Project Structure
 
-coffee-shop-sales-analysis/
-├── SQL/
-│ ├── 01_eda_initial.sql
-│ ├── 02_data_cleaning.sql
-│ └── 03_business_queries.sql
-├── POWER BI/
-│ └── Coffee_Sales_Analysis_PowerBI.pbix
-│ └── dashboard_preview.png
-└── README.md
+coffee-shop-sales-analysis/\
+├── SQL/\
+│ ├── 01_eda_initial.sql\
+│ ├── 02_data_cleaning.sql\
+│ └── 03_business_queries.sql\
+├── POWER BI/\
+│ └── Coffee_Sales_Analysis_PowerBI.pbix\
+│ └── dashboard_preview.png\
+└── README.md\
 
 ## 🚀 Next Steps
 
 - Ampliar el análisis con Python (EDA y visualización)
 
-***Autora:*** *Jamilette Ramírez*
+***Autora:*** *Jamilette Ramírez*\
 *Data Analyst aspirante / Business Intelligence Junior*
