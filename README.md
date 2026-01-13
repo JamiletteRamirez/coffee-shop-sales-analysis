@@ -2,7 +2,7 @@
 
 ## **Insights clave y recomendaciones de negocio**
 
-**Período analizado:** Enero - Junio 2023
+**Período analizado:** Enero - Junio 2023   
 **Ubicaciones:** Astoria, Hell's Kitchen, Lower Manhattan
 
 # 📊 **Resumen ejecutivo **
@@ -32,10 +32,10 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - La demanda del mercado está aumentando
 - Las estrategias actuales son efectivas
 
-***Recomendaciones: ***
-✅ Mantener las estrategias de crecimiento actuales
-✅ Preparar inventario para expansión continua
-✅ Considerar apertura de ubicaciones adicionales
+***Recomendaciones:***   
+✅ Mantener las estrategias de crecimiento actuales   
+✅ Preparar inventario para expansión continua  
+✅ Considerar apertura de ubicaciones adicionales  
 
 2. Desempeño por categoría de producto
 
@@ -62,11 +62,11 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - Los productos de panadería tienen fuerte potencial de venta cruzada
 - Los artículos especiales (granos, empaquetados) son estables
 
-***Recomendaciones:***
-✅ Expandir las líneas exitosas de café y té
-✅ Crear combos de panadería con bebidas (ofertas combinadas)
-✅ Probar promociones estacionales para chocolate caliente
-✅ Introducir programas de lealtad enfocados en café/té
+***Recomendaciones:***  
+✅ Expandir las líneas exitosas de café y té  
+✅ Crear combos de panadería con bebidas (ofertas combinadas)   
+✅ Probar promociones estacionales para chocolate caliente    
+✅ Introducir programas de lealtad enfocados en café/té   
 
 3. Productos con mejor desempeño
 
@@ -92,14 +92,15 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - Los productos sostenibles/orgánicos tienen un desempeño excepcional
 - Los productos premium (Jamaican, mezclas especiales) tienen alta demanda
 
-***Implicaciones estratégicas:***
-✅ Destacar opciones sostenibles y orgánicas en marketing
-✅ Enfatizar la calidad de productos premium
-✅ Considerar venta sugerida a tamaños más grandes
-✅ Asegurar disponibilidad consistente de los top 10 productos
+***Implicaciones estratégicas:***    
+✅ Destacar opciones sostenibles y orgánicas en marketing   
+✅ Enfatizar la calidad de productos premium   
+✅ Considerar venta sugerida a tamaños más grandes   
+✅ Asegurar disponibilidad consistente de los top 10 productos   
 
-4. Métricas de comportamiento del cliente
-**Análisis de transacciones:**
+4. Métricas de comportamiento del cliente    
+
+**Análisis de transacciones:**   
 - **Valor promedio de orden (AOV):** $4.69
 - **Artículos promedio por transacción:** 1.44 artículos
 - **Transacciones totales:** 149,116
@@ -110,7 +111,7 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - Hay espacio para aumentar el tamaño de la canasta
 - El AOV bajo sugiere oportunidad para venta sugerida
 
-***Recomendaciones:***
+***Recomendaciones:***   
 ✅ Estrategia de venta sugerida: capacitar al personal para sugerir complementos
 
 - "¿Le gustaría un pastelito con eso?"
@@ -126,8 +127,8 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - Compre 10 cafés, obtenga 1 gratis
 - Sistema de puntos por frecuencia
 
-**Objetivo:** Aumentar AOV a $5.50+ (incremento del 17%)
-**Objetivo:** Aumentar artículos por transacción a 1.8+ (incremento del 25%)
+**Objetivo:** Aumentar AOV a $5.50+ (incremento del 17%)   
+**Objetivo:** Aumentar artículos por transacción a 1.8+ (incremento del 25%)   
 
 5. Desempeño por ubicación de tienda
 
@@ -135,7 +136,7 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 
 - Patrones de crecimiento similares
 - Preferencias de productos comparables
-* Contribución de ingresos consistente
+- Contribución de ingresos consistente
 
 ***Implicaciones:***
 
@@ -144,10 +145,10 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - La escalabilidad está probada
 
 ***Recomendaciones:***
-✅ Documentar mejores prácticas para futura expansión
-✅ Compartir tácticas exitosas en todas las ubicaciones
-✅ Considerar apertura de 1-2 ubicaciones adicionales en vecindarios similares
-✅ Explorar oportunidades de franquicia o licenciamiento
+✅ Documentar mejores prácticas para futura expansión    
+✅ Compartir tácticas exitosas en todas las ubicaciones     
+✅ Considerar apertura de 1-2 ubicaciones adicionales en vecindarios similares    
+✅ Explorar oportunidades de franquicia o licenciamiento     
 
 ## 🎯 Elementos de acción prioritarios
 
@@ -185,7 +186,7 @@ Si se implementan las recomendaciones:
 
 **Estimación conservadora:** +$350K de ingresos anuales adicionales
 
-## 🔍 Notas sobre Calidad de Datos
+## 🔍 Notas sobre calidad de datos
 
 Fortalezas:
 
@@ -222,13 +223,13 @@ Los datos revelan oportunidades específicas para:
 Con ejecución enfocada en las recomendaciones anteriores, este negocio está bien posicionado para aumentar 
 los ingresos anuales en 25%+ mientras mantiene la excelencia operacional.
 
-**¡Gracias por tu tiempo!
-Análisis realizado usando MySQL y Power BI
+**¡Gracias por tu tiempo!    
+Análisis realizado usando MySQL y Power BI    
 Período de datos: Enero - Junio 2023**
 
 ## 🚀 Next Steps
 
 - Ampliar el análisis con Python (EDA y visualización)
 
-***Autora:*** *Jamilette Ramírez*
+***Autora:*** *Jamilette Ramírez*    
 * aspirante Data Analyst / Business Intelligence *
