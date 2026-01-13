@@ -5,7 +5,7 @@
 **Período analizado:** Enero - Junio 2023   
 **Ubicaciones:** Astoria, Hell's Kitchen, Lower Manhattan
 
-# 📊 **Resumen ejecutivo **
+# 📊 Resumen ejecutivo 
 
 Este análisis examina 149,116 transacciones en 3 ubicaciones de cafetería en NYC durante 6 meses, revelando 
 fuertes tendencias de crecimiento y claras oportunidades de optimización estratégica.
@@ -144,7 +144,7 @@ fuertes tendencias de crecimiento y claras oportunidades de optimización estrat
 - La consistencia de marca se mantiene
 - La escalabilidad está probada
 
-***Recomendaciones:***
+***Recomendaciones:***    
 ✅ Documentar mejores prácticas para futura expansión    
 ✅ Compartir tácticas exitosas en todas las ubicaciones     
 ✅ Considerar apertura de 1-2 ubicaciones adicionales en vecindarios similares    
@@ -232,4 +232,4 @@ Período de datos: Enero - Junio 2023**
 - Ampliar el análisis con Python (EDA y visualización)
 
 ***Autora:*** *Jamilette Ramírez*    
-* aspirante Data Analyst / Business Intelligence *
+*aspirante Data Analyst / Business Intelligence*
