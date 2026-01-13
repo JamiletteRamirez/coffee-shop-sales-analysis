@@ -1,130 +1,234 @@
-# ☕Coffee Shop Sales Analysis | SQL & Power BI
+# ☕**Coffee Shop Sales Analysis | SQL & Power BI**
 
-## 🎯 Business Objective
+## **Insights clave y recomendaciones de negocio**
 
-Analizar los datos transaccionales de ventas de una cadena de cafeterías para identificar los factores que 
-impulsan los ingresos, las tendencias de ventas, el rendimiento de los productos y la información a nivel 
-de tienda que respalda la toma de decisiones basada en datos.
+**Período analizado:** Enero - Junio 2023
+**Ubicaciones:** Astoria, Hell's Kitchen, Lower Manhattan
 
-Este proyecto simula un flujo de trabajo de inteligencia empresarial del mundo real, desde la exploración de
-datos sin procesar hasta el desarrollo del dashboard.
+# 📊 **Resumen ejecutivo **
 
-## 📊 Dataset
+Este análisis examina 149,116 transacciones en 3 ubicaciones de cafetería en NYC durante 6 meses, revelando 
+fuertes tendencias de crecimiento y claras oportunidades de optimización estratégica.
 
-**Source:** Maven Roasters – Coffee Shop Sales Dataset (Kaggle)
+**Destacados clave:**
 
-El dataset contiene registros transaccionales que incluyen:
+- 💰 $698.8K de ingresos totales generados
+- 📈 121% de crecimiento de enero a junio
+- ☕ El café domina con 39% de los ingresos totales
+- 📍 Desempeño consistente en las 3 ubicaciones
 
-- Fecha y hora de la transacción
+## 💡 **Hallazgos principales**
+1. Fuerte trayectoria de crecimiento de ingresos
 
-- Cantidad vendida
+***Observación:***
 
-- Ubicación de la tienda
+- Enero: $81K de ingresos
+- Junio: $166K de ingresos
+- Crecimiento constante mes a mes con caídas mínimas
 
-- Detalles y precios de productos
+***Lo que esto significa:***
 
-*Los datos representan la actividad de ventas en 3 tiendas y 97 productos, con un total de 55 198 transacciones.*
+- El negocio está escalando exitosamente
+- La demanda del mercado está aumentando
+- Las estrategias actuales son efectivas
 
-## 🧹 Data Preparation & Cleaning (SQL)
+***Recomendaciones: ***
+✅ Mantener las estrategias de crecimiento actuales
+✅ Preparar inventario para expansión continua
+✅ Considerar apertura de ubicaciones adicionales
 
-El análisis comenzó con un análisis exploratorio de datos (EDA) y la validación de datos utilizado MySQL:
+2. Desempeño por categoría de producto
 
-- Validación de valores nulos o inválidos 
+***Distribución de ingresos:***
 
-- Detección de duplicados
+1. Café - 39.0% ($272K)
+- Mayor generador de ingresos
+- Incluye café filtrado, espresso, mezclas gourmet
+2. Té - 28.0% ($196K)
+- Fuerte categoría secundaria
+- Ofertas diversas (herbal, verde, negro, chai)
+3. Panadería - 12.0% ($84K)
+- Productos complementarios
+- Alta tasa de compra conjunta
+4. Chocolate para Beber - 9.0% ($63K)
+- Potencial estacional
+- Posicionamiento premium
+5. Otros - 12.0% ($84K)
+- Granos de café, té suelto, productos empaquetados
 
-- Revisión de tipos de datos y rangos de fechas
+***Insights:***
 
-- Separación de datos sin procesar de tablas analíticas
+- Café y té representan 67% de los ingresos totales
+- Los productos de panadería tienen fuerte potencial de venta cruzada
+- Los artículos especiales (granos, empaquetados) son estables
 
-*Para mejorar el rendimiento analítico y la claridad, los datos se moldearon utilizando un enfoque dimensional
-(esquema estrella).*
+***Recomendaciones:***
+✅ Expandir las líneas exitosas de café y té
+✅ Crear combos de panadería con bebidas (ofertas combinadas)
+✅ Probar promociones estacionales para chocolate caliente
+✅ Introducir programas de lealtad enfocados en café/té
 
-## 🧱 Data Model
+3. Productos con mejor desempeño
 
-Diseño de esquema de estrella:
+***Top 10 productos por ingresos:***
 
-- fact_sales – transactional data (quantities, date, time)
+| Rango  | Producto | Categoría | Ingresos est. |
+| -----  | -------- | --------- | ------------- |
+| 1  | Sustainable grown | Café/Chocolate  | ~$21K |
+| 2  | Dark Chocolate  | LgChocolate | ~$20K |
+| 3  | Latte | RgCafé | ~$19K |
+| 4  | Morning Sunrise Chai Lg  | Té | ~$18K |
+| 5  | Cappuccino Lg | Café | ~$18K |
+| 6  | Jamaican Coffee River | Café | ~$17K |
+| 7  | Sustainably Grown Organic Lg | Chocolate | ~$17K| 
+| 8  | Cappuccino | Café | ~$16K |
+| 9  | Brazilian Lg | Café | ~$16K |
+| 10 | Latte | Café | ~$15K | 
 
-- dim_products – product category, type, detail, and price
+***Observaciones clave:***
 
-- dim_stores – store identifiers and locations
+- 7 de 10 productos top son a base de café
+- Los tamaños grandes dominan los productos top
+- Los productos sostenibles/orgánicos tienen un desempeño excepcional
+- Los productos premium (Jamaican, mezclas especiales) tienen alta demanda
 
-*Este modelo admite filtro, agregación y un rendimiento del dashboard eficientes.*
+***Implicaciones estratégicas:***
+✅ Destacar opciones sostenibles y orgánicas en marketing
+✅ Enfatizar la calidad de productos premium
+✅ Considerar venta sugerida a tamaños más grandes
+✅ Asegurar disponibilidad consistente de los top 10 productos
 
-## 🧮 SQL Analysis
+4. Métricas de comportamiento del cliente
+**Análisis de transacciones:**
+- **Valor promedio de orden (AOV):** $4.69
+- **Artículos promedio por transacción:** 1.44 artículos
+- **Transacciones totales:** 149,116
 
-Los análisis SQL claves realizados incluyen: 
+***Lo que esto nos dice:***
 
-- Cálculo de los ingresos totales
+- Los clientes típicamente compran 1-2 artículos por visita
+- Hay espacio para aumentar el tamaño de la canasta
+- El AOV bajo sugiere oportunidad para venta sugerida
 
-- Tendencias de ingresos mensuales
+***Recomendaciones:***
+✅ Estrategia de venta sugerida: capacitar al personal para sugerir complementos
 
-- Productos más vendidos por ingresos
+- "¿Le gustaría un pastelito con eso?"
+- "Actualice a grande por solo $0.50 más"
 
-- Contribución a los ingresos por tienda
+✅ Ofertas combinadas: crear combos atractivos
 
-- Rendimiento de las categorías de productos
+- Café + Producto de panadería: $6 (ahorre $1)
+- Té + Biscotti: $5 (ahorre $0.75)
 
-*Todas las consultas se documentan y organizan en scripts SQL versionados. *
+✅ Programa de lealtad: recompensar compras repetidas
 
-## 📈 Power BI Dashboard
+- Compre 10 cafés, obtenga 1 gratis
+- Sistema de puntos por frecuencia
 
-Se creó un dashboard interactivo con Power BI, conectado directamente con la base de datos de MySQL
+**Objetivo:** Aumentar AOV a $5.50+ (incremento del 17%)
+**Objetivo:** Aumentar artículos por transacción a 1.8+ (incremento del 25%)
 
-### Métricas calves (DAX)
+5. Desempeño por ubicación de tienda
 
-- Ingresos totales 
+***Las tres ubicaciones muestran:***
 
-- Total de unidades vendidas
+- Patrones de crecimiento similares
+- Preferencias de productos comparables
+* Contribución de ingresos consistente
 
-- Average Ticket Size
+***Implicaciones:***
 
-### Análisis visual  
+- La excelencia operacional está estandarizada en todas las ubicaciones
+- La consistencia de marca se mantiene
+- La escalabilidad está probada
 
-- Tendencia de ventas en el tiempo
+***Recomendaciones:***
+✅ Documentar mejores prácticas para futura expansión
+✅ Compartir tácticas exitosas en todas las ubicaciones
+✅ Considerar apertura de 1-2 ubicaciones adicionales en vecindarios similares
+✅ Explorar oportunidades de franquicia o licenciamiento
 
-- Ingresos por ubicación de la tienda
+## 🎯 Elementos de acción prioritarios
 
-- Productos más vendidos por ingresos
+**Inmediato (Próximos 30 días)**
 
-- Distribución de ventas por hora
+1. ✅ Lanzar programa de capacitación en venta sugerida para el personal
+2. ✅ Crear menús de "ofertas combo"
+3. ✅ Abastecer los top 10 productos (asegurar que no haya faltantes)
+4. ✅ Implementar señalización promocional de "aumento de tamaño"
 
-- Segmentadores interactivos para tiendas y categorías de productos
+**Corto plazo (Próximos 90 días)**
 
-## 🔍 Key Insights
+1. ✅ Lanzar programa de lealtad
+2. ✅ Probar promociones estacionales (chocolate caliente en invierno)
+3. ✅ Analizar datos de horas pico para optimización de personal
+4. ✅ Encuestar clientes sobre intereses en nuevos productos
 
-- Un pequeño grupo de productos estrella genera una parte significativa de los ingresos totales.
+**Largo plazo (Próximos 6-12 meses)**
 
-- Las ventas alcanzan su punto álgido durante las horas de la mañana.
+1. ✅ Expandir línea de productos sostenibles/orgánicos
+2. ✅ Explorar oportunidades de nuevas ubicaciones
+3. ✅ Desarrollar programa de catering/órdenes al por mayor
+4. ✅ Crear aplicación móvil para pre-órdenes y lealtad
 
-- Una tienda lidera constantemente el rendimiento general de los ingresos.
+## 📈 Impacto esperado
 
-- Los productos de café dominan el volumen total de ventas.
+Si se implementan las recomendaciones:
 
-## 🛠️ Tools & Technologies
+| Métrica  | Actual | Objetivo | Aumento |
+| -----  | -------- | --------- | ------------- |
+| AOV  | $4.69 | $5.50 | +17% | 
+| Artículos/Transacción | 1.44 | 1.80 | +25% |
+| Ingresos mensuales | $116K prom | $145K | +25% |
+| Ingresos anuales | $1.4M est | $1.75M | +25% |
 
-- MySQL – data cleaning, modeling, and analysis
+**Estimación conservadora:** +$350K de ingresos anuales adicionales
 
-- SQL – EDA and business queries
+## 🔍 Notas sobre Calidad de Datos
 
-- Power BI – data modeling, DAX measures, and visualization
+Fortalezas:
 
-## 📂 Project Structure
+- Dataset completo sin valores críticos faltantes
+- Formato de datos consistente en todas las transacciones
+- Seguimiento preciso de fecha/hora
+- Categorización de productos limpia
 
-coffee-shop-sales-analysis/
-├── SQL/
-│ ├── 01_eda_initial.sql
-│ ├── 02_data_cleaning.sql
-│ └── 03_business_queries.sql
-├── POWER BI/
-│ └── Coffee_Sales_Analysis_PowerBI.pbix
-│ └── dashboard_preview.png
-└── README.md
+Limitaciones:
+
+- No hay identificación de clientes (no se puede rastrear clientes recurrentes)
+- No hay datos de costos (no se puede calcular rentabilidad real)
+- No hay información demográfica
+- Limitado a 6 meses (tendencias estacionales poco claras)
+
+Recomendaciones para futura recolección de datos:
+
+- Implementar tarjetas de lealtad para rastreo de clientes
+- Registrar costos de productos para análisis de margen
+- Recolectar datos demográficos opcionales (rango de edad, código postal)
+- Continuar rastreando durante un año completo para identificar estacionalidad
+
+
+## 📝 Conclusión
+
+Este negocio de cafetería demuestra fundamentos sólidos con claro impulso de crecimiento. 
+Los datos revelan oportunidades específicas para:
+
+1. Optimizar mezcla de productos - enfocarse en los de mejor desempeño
+2. Aumentar valor de transacción - a través de venta sugerida estratégica
+3. Escalar operaciones - modelo probado listo para expansión
+4. Mejorar lealtad del cliente - programas sistemáticos de retención
+
+Con ejecución enfocada en las recomendaciones anteriores, este negocio está bien posicionado para aumentar 
+los ingresos anuales en 25%+ mientras mantiene la excelencia operacional.
+
+**¡Gracias por tu tiempo!
+Análisis realizado usando MySQL y Power BI
+Período de datos: Enero - Junio 2023**
 
 ## 🚀 Next Steps
 
 - Ampliar el análisis con Python (EDA y visualización)
 
 ***Autora:*** *Jamilette Ramírez*
-*Data Analyst aspirante / Business Intelligence Junior*
+* aspirante Data Analyst / Business Intelligence *
